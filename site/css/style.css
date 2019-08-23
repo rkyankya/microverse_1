@@ -1,123 +1,237 @@
 /* Custom THeme */
 
 :root {
-  --colorPrimary: #0099e6;
-  --colorPrimaryDark: #004466;
-  --fontColor: #ffffff;
-  --font: #000000;
+    --colorPrimary: #0099e6;
+    --colorPrimaryDark: #004466;
+    --fontColor: #ffffff;
+    --font: #000000;
 }
+
 
 /* Base */
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 
 /*-----------------------------------------------
 nav section
 -----------------------------------------------*/
 
 #navbar {
-  background-color: var(--colorPrimaryDark);
-  display: flex;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  justify-content: flex-end;
-  height: 60px;
-  z-index: 10;
-  box-shadow: 0 2px 0 #000000;
+    background-color: var(--colorPrimaryDark);
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    justify-content: flex-end;
+    height: 60px;
+    z-index: 10;
+    box-shadow: 0 2px 0 #000000;
 }
 
 .navbar-list {
-  margin-right: 10px;
-  display: flex;
-  list-style-type: none;
+    margin-right: 10px;
+    display: flex;
+    list-style-type: none;
 }
 
 .navbar-list a {
-  display: block;
-  font-size: 20px;
-  padding: 16px;
-  text-decoration: none;
-  color: var(--fontColor);
+    display: block;
+    font-size: 20px;
+    padding: 16px;
+    text-decoration: none;
+    color: var(--fontColor);
 }
 
 .navbar-list a:hover {
-  background: #006699;
+    background: #006699;
 }
 
 .navbar-list li {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 
 /*------------------------
 End Navbar
 -------------------------*/
+
 
 /*------------------------
 Start Welcome Section
 -------------------------*/
 
 .welcome-section {
-  background-image: url(https://hackernoon.com/hn-images/1*RNkyx-Zq7w61eR74nMYgnA.jpeg);
-  background-repeat: no-repeat;
-  display: flex;
-  height: 600px;
-  justify-content: center;
-  color: var(--fontColor);
-  align-items: center;
-  width: 100%;
+    background-image: url(https://hackernoon.com/hn-images/1*RNkyx-Zq7w61eR74nMYgnA.jpeg);
+    background-repeat: no-repeat;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    color: var(--fontColor);
+    align-items: center;
+    width: 100%;
 }
 
 h1 {
-  font-size: 50px;
+    font-size: 50px;
 }
+
 
 /*------------------------
 End Welcome Section
 -------------------------*/
 
+
 /*------------------------
 Start Projects Section
 -------------------------*/
+
 #project-section {
-  padding: 10rem 2rem;
-  text-align: center;
+    padding: 10rem 2rem;
+    text-align: center;
 }
+
 .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
 }
 
 .single-project {
-  background: var(--colorPrimaryDark);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 6px;
+    background: var(--colorPrimaryDark);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
 }
 
 .single-project .project-image {
-  height: calc(100% - 6.8rem);
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+    height: calc(100% - 6.8rem);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .projects .project-title {
-  text-transform: capitalize;
-  font-size: 1.1rem;
-  margin-top: 1rem;
-  text-align: center;
-  color: var(--fontColor);
-  padding: 15px;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--fontColor);
+    padding: 15px;
 }
 
 .projects a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
+
+/*------------------------
+End Project Section
+-------------------------*/
+
+
+/*------------------------
+Start Contacts Section
+-------------------------*/
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 0 30px;
+    color: var(--colorPrimary);
+}
+
+.contact-header>h2 {
+    font-size: 30px;
+    height: auto;
+}
+
+.contact-section-header>p {
+    font-weight: 600px;
+    font-style: italic;
+    font-size: 70px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-links>h3 {
+    justify-content: flex-start;
+}
+
+.contact-links a img {
+    height: 50px;
+    width: 50px;
+}
+
+.contact-details {
+    font-size: 20px;
+    transition: all;
+    justify-content: space-evenly;
+}
+
+.single-link:hover {
+    transform: translateY(8px);
+}
+
+.single-link {
+    padding: 30px;
+    justify-content: center;
+}
+
+.single-link a {
+    text-decoration: none;
+    position: relative;
+    color: #000000;
+}
+
+
+/*------------------------
+End Contacts Section
+-------------------------*/
+
+
+/*------------------------
+Start Footer Section
+-------------------------*/
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--colorPrimaryDark);
+    border-top: 4px #000000;
+    color: #ffffff;
+}
+
+footer>p {
+    margin: 20px;
+}
+
+footer i {
+    vertical-align: middle;
+}
+
+
+/*------------------------
+End Footer Section
+-------------------------*/
