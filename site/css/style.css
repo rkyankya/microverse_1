@@ -1,0 +1,123 @@
+/* Custom THeme */
+
+:root {
+  --colorPrimary: #0099e6;
+  --colorPrimaryDark: #004466;
+  --fontColor: #ffffff;
+  --font: #000000;
+}
+
+/* Base */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-----------------------------------------------
+nav section
+-----------------------------------------------*/
+
+#navbar {
+  background-color: var(--colorPrimaryDark);
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  justify-content: flex-end;
+  height: 60px;
+  z-index: 10;
+  box-shadow: 0 2px 0 #000000;
+}
+
+.navbar-list {
+  margin-right: 10px;
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-list a {
+  display: block;
+  font-size: 20px;
+  padding: 16px;
+  text-decoration: none;
+  color: var(--fontColor);
+}
+
+.navbar-list a:hover {
+  background: #006699;
+}
+
+.navbar-list li {
+  text-decoration: none;
+}
+
+/*------------------------
+End Navbar
+-------------------------*/
+
+/*------------------------
+Start Welcome Section
+-------------------------*/
+
+.welcome-section {
+  background-image: url(https://hackernoon.com/hn-images/1*RNkyx-Zq7w61eR74nMYgnA.jpeg);
+  background-repeat: no-repeat;
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  color: var(--fontColor);
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+/*------------------------
+End Welcome Section
+-------------------------*/
+
+/*------------------------
+Start Projects Section
+-------------------------*/
+#project-section {
+  padding: 10rem 2rem;
+  text-align: center;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.single-project {
+  background: var(--colorPrimaryDark);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
+.single-project .project-image {
+  height: calc(100% - 6.8rem);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.projects .project-title {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--fontColor);
+  padding: 15px;
+}
+
+.projects a {
+  text-decoration: none;
+}
