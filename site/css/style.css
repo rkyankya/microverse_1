@@ -14,6 +14,32 @@
   padding: 0;
 }
 
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 70%;
+  }
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -129,6 +155,7 @@ Start Projects Section
 .project-header h1 {
   border-bottom: 2px solid var(--colorPrimaryDark);
 }
+
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -164,3 +191,105 @@ Start Projects Section
 .projects a {
   text-decoration: none;
 }
+
+/*------------------------
+End Project Section
+-------------------------*/
+
+/*------------------------
+Start Contacts Section
+-------------------------*/
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  height: auto;
+  color: var(--colorPrimarkDark);
+}
+
+.contact-header > h2 {
+  font-size: 30px;
+  height: auto;
+  padding: 100px 50px 50px 50px;
+  text-transform: uppercase;
+}
+
+.contact-section-header > p {
+  font-weight: 600px;
+  font-style: italic;
+  font-size: 70px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-links > h3 {
+  justify-content: flex-start;
+}
+
+.contact-links a img {
+  height: 50px;
+  width: 50px;
+}
+
+.contact-details {
+  font-size: 20px;
+  transition: all;
+  justify-content: space-evenly;
+}
+
+.single-link:hover {
+  transform: translateY(8px);
+}
+
+.single-link {
+  padding: 30px;
+  justify-content: center;
+}
+
+.single-link a {
+  text-decoration: none;
+  position: relative;
+  color: #000000;
+}
+
+/*------------------------
+End Contacts Section
+-------------------------*/
+
+/*------------------------
+Start Footer Section
+-------------------------*/
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--colorPrimaryDark);
+  border-top: 4px #000000;
+  color: #ffffff;
+}
+
+footer > p {
+  margin: 20px;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+/*------------------------
+End Footer Section
+-------------------------*/

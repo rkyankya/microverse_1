@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Profile Portfolio</title>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <!--Navbar-->
     <nav id="navbar">
-      <ul class="navbar-list">
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#projects-section">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <ul class="navbar-list">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
     <!--end navbar-->
 
@@ -55,13 +50,14 @@
             <img
               src="https://kotlinlang.org/assets/images/open-graph/kotlin_250x250.png"
               alt=""
+              target="_blank"
               class="project-image"
             />
             <div class="project-title">
               <h4>Kotlin</h4>
             </div>
-          </a>
-          <!--end project one-->
+            </a>
+            <!--end project one-->
         </div>
 
         <div class="single-project">
@@ -70,29 +66,26 @@
             <img
               src="https://ih0.redbubble.net/image.523129208.4434/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
               alt="es6 javascript"
+              target="_blank"
               class="project-image"
             />
             <div class="project-title">
               <h4>Python</h4>
             </div>
-          </a>
-          <!--end project two-->
+            </a>
+            <!--end project two-->
         </div>
 
-        <div class="single-project">
-          <!--project three-->
-          <a href="https://github.com/rails/rails" id="project-tile">
-            <img
-              src="https://avatars.githubusercontent.com/u/4223"
-              alt="ruby on rails"
-              class="project-image"
-            />
-            <div class="project-title">
-              <h4>Ruby on Rails</h4>
+            <div class="single-project">
+                <!--project three-->
+                <a href="https://github.com/rails/rails" id="project-tile">
+                    <img src="https://avatars.githubusercontent.com/u/4223" target="_blank" alt="ruby on rails" class="project-image" />
+                    <div class="project-title">
+                        <h4>Ruby on Rails</h4>
+                    </div>
+                </a>
+                <!--end project three-->
             </div>
-          </a>
-          <!--end project three-->
-        </div>
 
         <div class="single-project">
           <!--project four-->
@@ -100,14 +93,17 @@
             <img
               src="https://ionicframework.com/blog/wp-content/uploads/2019/02/react-beta.png"
               alt=""
+              target="_blank"
               class="project-image"
             />
             <div class="project-title">
               <h4>React</h4>
             </div>
-          </a>
-          <!--end project four-->
-        </div>
+            </a>
+            <!--end project four-->
+            </div>
+        
+        
 
         <div class="single-project">
           <!--project five-->
@@ -115,6 +111,7 @@
             <img
               src="https://www.returngis.net/wp-content/uploads/2016/01/Postman.jpg"
               alt=""
+              target="_blank"
               class="project-image"
             />
             <div class="project-title">
@@ -130,6 +127,7 @@
             <img
               src="https://software.intel.com/sites/default/files/managed/fa/a0/Runtime-logo-Node.jpg"
               alt=""
+              target="_blank"
               class="project-image"
             />
             <div class="project-title">
@@ -143,7 +141,65 @@
     <!--End of Projects section-->
 
     <!--Contact section-->
-    <section id="contact"></section>
+    <section id="contact" class="contact-section">
+        <div class="contact-header">
+            <h2>
+                <p>Contact us</p>
+            </h2>
+        </div>
+        <div class="contact-links">
+            <div class="single-link">
+                <a href="https://facebook.com" target="_blank" class="btn contact-details">
+                    <img src="data:image/png;base64,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">
+                </a>
+                <h3>Facebook</h3>
+
+            </div>
+
+            <div class="single-link">
+                <a id="profile-link" href="https://github.com" target="_blank" class="btn contact-details"><img src="data:image/png;base64,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"></a>
+                <h3>GitHub</h3>
+            </div>
+
+
+
+            <div class="single-link">
+                <a href="https://twitter.com" target="_blank" class="btn contact-details"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbZLQ8YXnZS2FebseFcOE9PeWv_g3sbTYa3W2URru_vK2hMaTJ"> </a>
+                <h3>Twitter</h3>
+            </div>
+
+
+            <div class="single-link">
+                <a href="mailto:example@example.com" class="btn contact-details"><img src="data:image/jpeg;base64,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"></a>
+                <h3>Email</h3>
+
+            </div>
+
+
+            <div class="single-link">
+                <a href="tel:555-555-5555" class="btn contact-details"><img src="data:image/png;base64,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"></i>
+                </a>
+                <h3>Call</h3>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
     <!--End of Contact section-->
-  </body>
+
+    <!--Start of Footer section-->
+    <footer>
+        <p>
+            &copy; Created by Denis and Raymond &copy;.
+        </p>
+
+    </footer>
+
+    <!--End of Footer section-->
+
+</body>
+
 </html>
