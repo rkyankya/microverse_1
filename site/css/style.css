@@ -1,0 +1,95 @@
+/* Custom THeme */
+
+:root {
+    --colorPrimary: #0099e6;
+    --colorPrimaryDark: #004466;
+    --fontColor: #ffffff;
+    --font: #000000;
+}
+
+
+/* Base */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-----------------------------------------------
+nav section
+-----------------------------------------------*/
+
+#navbar {
+    background-color: var(--colorPrimaryDark);
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    justify-content: flex-end;
+    height: 60px;
+    z-index: 10;
+    box-shadow: 0 2px 0 #000000;
+}
+
+.navbar-list {
+    margin-right: 10px;
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-list a {
+    display: block;
+    font-size: 20px;
+    padding: 16px;
+    text-decoration: none;
+    color: var(--fontColor)
+}
+
+.navbar-list a:hover {
+    background: #006699;
+}
+
+.navbar-list li {
+    text-decoration: none;
+}
+
+
+/*------------------------
+End Navbar
+-------------------------*/
+
+
+/*------------------------
+Start Welcome Section
+-------------------------*/
+
+.welcome-section {
+    background-image: url(https://hackernoon.com/hn-images/1*RNkyx-Zq7w61eR74nMYgnA.jpeg);
+    background-repeat: no-repeat;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    color: var(--fontColor);
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+/*------------------------
+End Welcome Section
+-------------------------*/
+
+
+/*------------------------
+Start Projects Section
+-------------------------*/
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(269px, 1fr));
+    grid-column-gap: 1.5rem;
+}
